@@ -45,8 +45,8 @@ public class PrimMatrix<V,E> extends AdjacencyMatrix<V, E>{
 					}
 				}
 			}
-			graph.add(minVertex, minTarget, minEdge);
-			graph.add(minTarget, minVertex, minEdge);
+			graph.addRelation(minVertex, minTarget, minEdge);
+			graph.addRelation(minTarget, minVertex, minEdge);
 			visitedNodes.add(minTarget);
 			visitedVertices++;
 		}
